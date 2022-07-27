@@ -177,6 +177,7 @@ address {
 
 /*-- Hero --*/
 .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-right: auto;
@@ -244,7 +245,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 25px 100px;
+    height: 120px;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -323,15 +324,16 @@ address {
 
 .team-item {
     flex-basis: calc((100% - 90px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+                0px 1px 1px rgba(0, 0, 0, 0.14), 
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
 }
 
 .team-card-name {
     padding-top: 30px;
     padding-bottom: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-                0px 1px 1px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -405,12 +407,6 @@ address {
     align-items: center;
 }
 
-.client-list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .client-list-link {
     display: flex;
     justify-content: center;
@@ -443,13 +439,13 @@ address {
     margin-right: auto;
     margin-left: auto;
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .basement-main {
     display: flex;
-    background: #2F303A;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    align-items: baseline;
 }
 
 .basement-container {
@@ -496,10 +492,6 @@ address {
 .basement-contact-phone:hover,
 .basement-contact-phone:focus {
     color: var(--accent-color);
-}
-
-.basement-social {
-    padding-top: 22px; 
 }
 
 .basement-invitation {
